@@ -7,7 +7,7 @@ public class BoundElement<E> {
   private E element;
   private Long value; // addition time;
 
-  public BoundElement(E elemnt, Long value) {
+  public BoundElement(E elemnt) { // מקבל רק את האלמנט ואת הערך ניצור בבנאי (טיפול קל יותר במיין)
     this.element = elemnt;
     this.value = System.currentTimeMillis();
   }

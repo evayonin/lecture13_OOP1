@@ -22,7 +22,7 @@ public class TimeBoundList2<E> {
   }
 
   public void add(E element, Long value) { // אם רוצים ליצור את האובייקט במתודה ולהכניס לרשימה ביחד (קצר יותר במיין)
-    boundElemensList.add(new BoundElement<E>(element, value));
+    boundElemensList.add(new BoundElement<E>(element)); // מקבל רק אלמנט כי את הערך של הזמן יוצרים בבנאי שלו
   }
 
   // או:
